@@ -1,0 +1,13 @@
+<div class="container">
+    <h4>Superheroes - List</h1>
+    <!-- Create a list to show the customer name and a hyperlink to details page -->
+    
+    <table class="table table-striped">
+  		<tbody>
+  			<tr ng-repeat="x in customers">
+    			<td>{{ x.firstName + " " + x.lastName }}</td>
+    			<td><a class="btn btn-info" href="#/detail/{{ x.id }}">Details</a></td>
+  			</tr>
+  		</tbody>
+	</table>
+</div>

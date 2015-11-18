@@ -1,0 +1,10 @@
+{
+  "customers":[
+    { "id": 1, "firstName": "Bruce", "lastName":"Wayne", "age": 30, "gender": "M" },
+    { "id": 2, "firstName": "Peter", "lastName":"Park", "age": 17, "gender": "M" },
+    { "id": 3, "firstName": "Selina", "lastName":"Kyle", "age": 32, "gender": "F" },
+    { "id": 4, "firstName": "Clark", "lastName":"Kent", "age": 45, "gender": "M" },
+    { "id": 5, "firstName": "Oliver", "lastName":"Queen", "age": 28, "gender": "M" },
+    { "id": 6, "firstName": "Diana", "lastName":"Prince", "age": 40, "gender": "F" }
+  ]
+}

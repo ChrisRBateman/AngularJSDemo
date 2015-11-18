@@ -1,0 +1,10 @@
+{
+  "customers":[
+    { "firstName": "Bruce", "lastName":"Wayne", "age": 30, "gender": "M" },
+    { "firstName": "Peter", "lastName":"Park", "age": 17, "gender": "M" },
+    { "firstName": "Selina", "lastName":"Kyle", "age": 32, "gender": "F" },
+    { "firstName": "Clark", "lastName":"Kent", "age": 45, "gender": "M" },
+    { "firstName": "Oliver", "lastName":"Queen", "age": 28, "gender": "M" },
+    { "firstName": "Diana", "lastName":"Prince", "age": 40, "gender": "F" }
+  ]
+}

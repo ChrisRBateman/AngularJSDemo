@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel='stylesheet', href='css/bootstrap.min.css'>
+</head>
+<body ng-app="app">
+    <div class="container" ng-controller="AppController">
+    	<h3>Exec 04</h3>
+        <h4>TODO List</h4><br/>
+        
+        <form ng-submit="addTodoTask()" name="taskForm" novalidate>
+    		<input type="text" class="form-control" name="inputTask" ng-model="inputTask" 
+    			size="40" placeholder="Add TODO Task" required><br/>
+    		<input type="submit" class="btn btn-info" value="Add New Task" ng-disabled="taskForm.inputTask.$invalid">    			
+		</form><br/><br/>
+		
+        <table class="table table-striped">
+  			<thead>
+  				<tr>
+    				<th>TODO</th>
+    				<th>Completed</th>
+  				</tr>
+  			</thead>
+  			<tbody>
+  				<tr ng-repeat="x in taskList">
+    				<td>{{ x.task }}</td>
+    				<td><input type="checkbox" ng-model="x.completed"></td>
+  				</tr>
+  			</tbody>
+		</table>
+		
+		<button class="btn btn-info" ng-click="removeTodoTasks()">Remove Completed Tasks</button>
+		
+    </div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
